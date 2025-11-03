@@ -1,6 +1,6 @@
 # 📝 Task Manager App (Android, XML + SQLite)
 
-This is a multi-screen Android application built for managing personal tasks. It supports user authentication, task creation, viewing, completion toggling, and deletion — all backed by a local SQLite database. The app is designed using XML layouts and follows modular architecture principles for clarity and maintainability.
+Our project, The Smart Neighbourhood App, is designed to simplify household management by integrating garbage collection schedules, utility tracking, and local service alerts into a single mobile platform. The motivation for creating this app stems from the need for residents to have a centralized and reliable system to manage and oversee everyday responsibilities that are often scattered across multiple websites or sources. The application aims to address the nature of current information sources, it aims to improve convenience, awareness, and communication within residential communities. The app is built using XML layouts and SQLite for local data persistence, with additional features like map and camera integration
 
 ---
 
