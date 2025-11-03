@@ -32,7 +32,7 @@ This is a multi-screen Android application built for managing personal tasks. It
 - **UI:** XML Layouts, ListView, Custom Adapter
 - **Database:** SQLite via `AppDatabaseHelper`
 - **Architecture:** Modular activities and helper classes
-- **Navigation:** Explicit intents between screens
+- **Navigation:** Explicit intents to switch between screens
 - **Compatibility:** Android 12+ (with `android:exported` compliance)
 
 ---
