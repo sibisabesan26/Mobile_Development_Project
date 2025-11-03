@@ -9,7 +9,7 @@ Our project, The Smart Neighbourhood App, is designed to simplify household mana
 - 🔐 **User Authentication**
   - Signup and login screens with SQLite-backed credential validation
 
-- 📋 **Task Management** (replace task management with feature that is meant for centralized hub)
+- 📋 **Task Management** 
   - Add new tasks with title and description
   - View all tasks in a ListView
   - Mark tasks as completed
