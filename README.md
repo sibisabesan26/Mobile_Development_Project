@@ -1,4 +1,4 @@
-# 📝 Task Manager App (Android, XML + SQLite)
+# 📝 Smart Manager App (Android, XML + SQLite)
 
 Our project, The Smart Neighbourhood App, is designed to simplify household management by integrating garbage collection schedules, utility tracking, and local service alerts into a single mobile platform. Many residents often have a need for a centralized and reliable system to manage and oversee everyday responsibilities that are often scattered across multiple websites or sources. The application aims to address the nature of current information sources, it aims to improve convenience, awareness, and communication within residential communities. The app is built using XML layouts and SQLite for local data persistence, with additional features like map and camera integration
 
