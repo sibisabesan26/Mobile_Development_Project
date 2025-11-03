@@ -9,14 +9,11 @@ Our project, The Smart Neighbourhood App, is designed to simplify household mana
 - 🔐 **User Authentication**
   - Signup and login screens with SQLite-backed credential validation
 
-- 📋 **Task Management**
-  - Add new tasks with title and description
-  - View all tasks in a ListView
-  - Mark tasks as completed
-  - Delete tasks instantly
+- 📋 **Task Management** (replace task management with feature that is meant for centralized hub)
 
 - 🗺️ **Map Integration**
-  - Launches Google Maps to view Ontario Tech University
+  - Garbage Collection Zones: Color-coded overlays by neighborhood with pickup dates and types (garbage, recycling, compost).
+  - Utility Outage & Service Alerts: Map pins showing affected areas with real-time updates.
 
 - 📷 **Camera Launch**
   - Opens device camera using intent
