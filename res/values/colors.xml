@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ✅ Light mode colors -->
+    <color name="primaryColor">#2E7D32</color> <!-- Green -->
+    <color name="secondaryColor">#FF9800</color> <!-- Orange -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Light gray -->
+    <color name="cardColor">#FFFFFF</color> <!-- White -->
+
+    <!-- ✅ Dark mode colors -->
+    <color name="primaryDarkColor">#1B5E20</color> <!-- Dark green -->
+    <color name="darkBackground">#121212</color> <!-- Dark gray background -->
+    <color name="darkCard">#1E1E1E</color> <!-- Dark card surface -->
+</resources>
