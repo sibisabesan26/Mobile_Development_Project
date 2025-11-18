@@ -9,11 +9,10 @@ Our project, The Smart Neighbourhood App, is designed to simplify household mana
 - 🔐 **User Authentication**
   - Signup and login screens with SQLite-backed credential validation
 
-- 📋 **Task Management** 
-  - Add new tasks with title and description
-  - View all tasks in a ListView
-  - Mark tasks as completed
-  - Delete tasks instantly
+- 📋 **Feedback** 
+  - Uses CRUD to keep a list of client feedback
+  - Upload videos and images
+  - Use Camera Launch
 
 - 🗺️ **Map Integration**
   - Garbage Collection Zones: Color-coded overlays by neighborhood with pickup dates and types (garbage, recycling, compost).
