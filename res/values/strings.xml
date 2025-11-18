@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SmartNeighborhood App</string>
+
+    <!-- Utility Tracking screen -->
+    <string name="utility_tracking">Utility Tracking</string>
+    <string name="previous_week">Previous Week</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ✅ Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Garbage Collection"
+        android:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ✅ Quick description -->
+    <TextView
+        android:id="@+id/pageDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View your neighborhood’s garbage, recycling, and yard waste schedule week by week. Use the Previous, Next, and Current buttons to navigate between weeks, and tap a day to see collection zones on the map."
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ✅ Week Navigation Row -->
+    <LinearLayout
+        android:id="@+id/weekNavContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/pageDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnPrevWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous Week"/>
+
+        <TextView
+            android:id="@+id/weekLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week of Nov 17"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnNextWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Week"/>
+
+        <Button
+            android:id="@+id/btnCurrentWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Week"/>
+    </LinearLayout>
+
+    <!-- ✅ RecyclerView for schedules -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSchedules"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/weekNavContainer"
+        app:layout_constraintBottom_toTopOf="@id/customFooter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ✅ Footer -->
+    <LinearLayout
+        android:id="@+id/customFooter"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@color/primaryColor"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_profile"
+            android:tint="@android:color/white"
+            android:contentDescription="Profile"/>
+
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="1dp" />
+
+        <ImageButton
+            android:id="@+id/btnFaqIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_faq"
+            android:tint="@android:color/white"
+            android:contentDescription="FAQ"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

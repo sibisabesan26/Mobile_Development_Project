@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ✅ Light mode colors -->
+    <color name="primaryColor">#00695C</color>           <!-- Teal -->
+    <color name="secondaryColor">#FF9800</color>         <!-- Orange -->
+    <color name="backgroundLight">#FAFAFA</color>        <!-- Light background -->
+    <color name="backgroundColor">#FAFAFA</color>        <!-- Alias for backgroundLight -->
+    <color name="cardColor">#FFFFFF</color>              <!-- White card surface -->
+    <color name="textPrimary">#212121</color>            <!-- Dark text -->
+    <color name="textSecondary">#757575</color>          <!-- Muted text -->
+
+    <!-- ✅ Dark mode colors -->
+    <color name="primaryDarkColor">#1B5E20</color>       <!-- Dark green -->
+    <color name="darkBackground">#121212</color>         <!-- Dark gray background -->
+    <color name="darkCard">#1E1E1E</color>               <!-- Dark card surface -->
+    <color name="textPrimaryDark">#FFFFFF</color>        <!-- Light text -->
+    <color name="textSecondaryDark">#B0B0B0</color>      <!-- Muted light text -->
+
+    <!-- ✅ Alert colors -->
+    <color name="alertBackground">#FFF3CD</color>        <!-- Light yellow -->
+    <color name="alertBorder">#FFEEBA</color>            <!-- Yellow border -->
+    <color name="alertText">#333333</color>              <!-- Alert text -->
+    <color name="footerIconColor">#FFFFFF</color> <!-- Pure white -->
+
+</resources>

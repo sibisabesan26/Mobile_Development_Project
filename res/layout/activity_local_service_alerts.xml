@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ✅ Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryColor"
+        android:title="Service Alerts"
+        android:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ✅ Quick description -->
+    <TextView
+        android:id="@+id/pageDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stay informed about important service updates in your neighborhood. Alerts may include changes to garbage collection, utility outages, or city maintenance. Tap an alert for more details."
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ✅ RecyclerView for alerts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAlerts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/pageDescription"
+        app:layout_constraintBottom_toTopOf="@id/customFooter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- ✅ Footer -->
+    <LinearLayout
+        android:id="@+id/customFooter"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@color/primaryColor"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_profile"
+            android:tint="@android:color/white"
+            android:contentDescription="Profile"/>
+
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="1dp" />
+
+        <ImageButton
+            android:id="@+id/btnFaqIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_faq"
+            android:tint="@android:color/white"
+            android:contentDescription="FAQ"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

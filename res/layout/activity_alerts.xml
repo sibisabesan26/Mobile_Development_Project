@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ✅ Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryColor"
+        android:title="Service Alerts"
+        android:titleTextColor="@android:color/white"/>
+
+    <!-- ✅ RecyclerView fills remaining space -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"/>
+
+    <!-- ✅ Footer -->
+    <LinearLayout
+        android:id="@+id/customFooter"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/primaryColor"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_profile"
+            android:tint="@android:color/white"
+            android:contentDescription="Profile"/>
+
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="1dp" />
+
+        <ImageButton
+            android:id="@+id/btnFaqIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_faq"
+            android:tint="@android:color/white"
+            android:contentDescription="FAQ"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- ✅ Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:title="Utility Tracking"
+            android:titleTextColor="@android:color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <!-- ✅ Week Navigation Row -->
+        <LinearLayout
+            android:id="@+id/weekNavContainer"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrevWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous Week" />
+
+            <TextView
+                android:id="@+id/weekLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Week of Nov 17"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnNextWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Week" />
+
+            <Button
+                android:id="@+id/btnCurrentWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Week" />
+        </LinearLayout>
+
+        <!-- ✅ Gas Chart -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chartGas"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- ✅ Electricity Chart -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chartElectricity"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- ✅ Water Chart -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chartWater"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- ✅ Footer -->
+        <LinearLayout
+            android:id="@+id/customFooter"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/primaryColor"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginTop="16dp">
+
+            <ImageButton
+                android:id="@+id/btnProfile"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_profile"
+                android:tint="@android:color/white"
+                android:contentDescription="Profile"/>
+
+            <Space
+                android:layout_width="48dp"
+                android:layout_height="1dp" />
+
+            <ImageButton
+                android:id="@+id/btnFaqIcon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_faq"
+                android:tint="@android:color/white"
+                android:contentDescription="FAQ"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
